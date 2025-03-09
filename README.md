@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+### **Project Description**
+A **file search API** that uses **NLP** and **TF-IDF** to find files/folders based on natural language queries. It ranks results by relevance and returns the top 5 matches with relevancy scores.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Current Features**
+1. **Natural Language Query Parsing**.
+2. **File Indexing** with metadata (name, creation/modification dates).
+3. **TF-IDF Search** for ranking files.
+4. **Relevancy Scores** (0 to 1) for each result.
+5. **REST API** (`/search`) for easy integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Future Developments**
+1. **Advanced NLP**: Intent/entity recognition.
+2. **File Content Search**: Extract text from PDFs, Word docs, etc.
+3. **Improved Ranking**: Semantic search, custom algorithms.
+4. **User Feedback**: Relevance feedback, personalization.
+5. **Cloud Integration**: Search Google Drive, Dropbox, etc.
+6. **UI**: Web or desktop app.
+7. **Security**: API key authentication, access control.
+8. **Advanced Queries**: Boolean search, fuzzy matching.
+9. **Analytics**: Track search trends and usage.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### **Example Use Cases**
+- Find invoices: "mullen lowe invoice march opex".
+- Retrieve reports: "clientx report april budget".
+- Search personal files: "vacation photos 2023".
+- Cloud search: "resume pdf" across Google Drive.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Technologies**
+- **Backend**: Python, FastAPI.
+- **NLP**: spaCy, NLTK.
+- **Search**: TF-IDF, Scikit-learn.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![image](https://github.com/user-attachments/assets/c92cb71d-8c28-4703-8a35-6f9186dc1ef3)
